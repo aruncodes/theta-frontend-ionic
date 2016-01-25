@@ -1,0 +1,71 @@
+ <ion-content class="has-header">
+
+    <h2 style="text-align:center;padding-top:5px;"> Find me food!! </h2>
+    <div class="list">
+
+      <div class="item item-icon-left item-select" href="#">
+        <i class="icon ion-android-restaurant"></i>
+        Restaurant
+        <select ng-model="rest">
+          <option value="any">Near me!</option>
+          <option ng-repeat="hotel in hotels" ng-value="{{hotel}}"> {{hotel}} </option>
+        </select>
+      </div>
+      <div class="item item-icon-left" style="padding-top:5px;padding-bottom:0px;line-height:34px">
+        Budget
+        <i class="icon ion-social-usd"></i>
+        <span class="item-note">
+          <input type="number" ng-model="budget" style="height:inherit;text-align:right;font-size:34px;width:100px;">
+        </span>
+      </div>
+
+       <div class="item item-icon-left" style="padding-top:5px;padding-bottom:0px;line-height:34px">
+        No. of people
+        <i class="icon ion-ios-people"></i>
+        <span class="item-note">
+          <input type="number" ng-model="people" style="height:inherit;text-align:right;font-size:34px;width:100px;">
+        </span>
+      </div>
+
+      <div class="item item-icon-left  item-toggle" >
+        <i class="icon ion-ios-nutrition"></i>
+        Veg 
+        <label class="toggle toggle-balanced">
+         <input type="checkbox" ng-model="veg">
+         <div class="track"> <div class="handle"></div> </div>
+       </label>
+     </div>
+
+     <div class="item item-icon-left  item-toggle">
+        <i class="icon ion-coffee"></i>
+        Starter
+        <label class="toggle toggle-balanced">
+         <input type="checkbox" ng-model="starter">
+         <div class="track"> <div class="handle"></div> </div>
+       </label>
+     </div>
+
+     <div class="item item-icon-left  item-toggle">
+        Main Course
+        <i class="icon ion-pizza"></i>
+        <label class="toggle toggle-balanced">
+         <input type="checkbox" ng-model="main">
+         <div class="track"> <div class="handle"></div> </div>
+       </label>
+     </div>
+
+     <div class="item item-icon-left  item-toggle">
+        Dessert
+        <i class="icon ion-icecream"></i>
+        <label class="toggle toggle-balanced">
+         <input type="checkbox" ng-model="dessert">
+         <div class="track"> <div class="handle"></div> </div>
+       </label>
+     </div>
+
+    <a nav-transition="android" ng-click="showMe(rest,budget,people,starter,main,dessert,veg)" class="button button-block button-balanced" href="#">
+      Show me suggestions!
+    </a>
+   </div>
+
+ </ion-content>

@@ -1,0 +1,17 @@
+<ion-content>
+  <center class="h2"> Pick one.. </center>
+
+  <div class="list">
+    <div ng-repeat="s in sugs" class="item item-thumbnail-left" ng-click="showDetail(s.id)">
+      <img src="{{ s.thumb }}">
+      <h2> {{ s.hotel }}</h2>
+      <p> 
+      {{ s.dishes.join(', ') }}
+      <!-- <span ng-repeat="d in s.dishes">{{d}} / </span> -->
+      </p>
+      <p> Rating : {{ s.rating/3 | number:2 }} / 5 </p>
+      <i class="ion-ios-circle-filled" ng-class="{true: 'veg', false: 'nonveg'}[s.veg == true]"></i><div class="list_cost"> Rs. {{s.cost}} </div>
+    </div>
+    
+  </div>
+</ion-content>

@@ -1,0 +1,15 @@
+/* Empty. Add your own CSS if you like */
+.list_cost {
+	position: relative;
+	width: 200;
+	float: right;
+    font-size: x-large;
+}
+
+.veg {
+	color:green;
+}
+
+.nonveg {
+	color:red;
+}

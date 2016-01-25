@@ -1,0 +1,16 @@
+<ion-content>
+<h3 style="text-align:center">{{dish.hotel}}</h3>
+<h4 style="text-align:right">Rs. {{dish.cost}}</h4>
+  <ul class="list">
+  <li ng-repeat="itm in dish.dishes" class="item">
+  <div class="row">
+    <div ng-click="moveLeft($index)" class="col item-icon-left"> <i class="icon ion-chevron-left"></i> </div>
+    <div class="col col-75" style="text-align:center"> <span ng-bind="itm"></span> </div>
+    <div ng-click="moveRight($index)" class="col item-icon-right"> <i class="icon ion-chevron-right"></i> </div>
+  </div>
+  </li>
+  </ul>
+  <button class="button button-block button-balanced">
+      Get me there!
+    </button>
+</ion-content>
