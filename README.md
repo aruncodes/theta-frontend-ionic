@@ -13,5 +13,10 @@ The app gives food combinations and suggestions based on your requirements and b
 - [Code.fun.do](https://www.acadaccelerator.com/home/events)
 
 ###Screenshots
+<img src="https://github.com/aruncodes/theta-frontend-ionic/blob/master/screenshots/IMG-20160111-WA0003.jpg?raw=true" width="400">
+<img src="https://github.com/aruncodes/theta-frontend-ionic/blob/master/screenshots/IMG-20160111-WA0004.jpg?raw=true" width="400">
+<!--
 ![main screen](https://github.com/aruncodes/theta-frontend-ionic/blob/master/screenshots/IMG-20160111-WA0003.jpg?raw=true "Main Screen")
-![results screen](https://github.com/aruncodes/theta-frontend-ionic/blob/master/screenshots/IMG-20160111-WA0004.jpg?raw=true "Results Screen")
+
+% ![results screen](https://github.com/aruncodes/theta-frontend-ionic/blob/master/screenshots/IMG-20160111-WA0004.jpg?raw=true "Results Screen")
+-->
